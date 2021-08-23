@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Train: A Learning and Practice Application</title>
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monsterrat" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <header style="background: #11BE79;">
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <a href="index.html" class="logo">Brain Train</a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="modules.html">Modules</a></li>
+                <li><a href="assessment.html">Practice Assessments</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+        </nav>
+
+        <nav class="rightnavbar">
+            <ul>
+                <li id="login"><a href="signin.html">Sign in</a></li>
+                <li><a id="signup" href="signup.html">Sign up</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="crayonbody">
+        <div class="transparent">
+            <div>
+
+                <div class="breadcrumb">
+                    <a href="modules.html">Modules</a>
+                    <i class="right angle icon divider">&nbsp;>&nbsp;</i>
+                    <a>1st Quarter</a>
+                </div>
+                <br>
+                <center>
+                    <select id="domainchoice" onchange="showDomain(this)">
+                        <option value="" disabled selected hidden>Choose a category</option>
+                        <option value="1">Reading Comprehension</option>
+                        <option value="2">Listening Comprehension</option>
+                        <option value="3">Viewing Comprehension</option>
+                        <option value="4">Vocabulary Development</option>
+                        <option value="5">Literature</option>
+                        <option value="6">Writing and Composition</option>
+                        <option value="7">Oral Language and Fluency</option>
+                        <option value="8">Grammar Awareness</option>
+                    </select>
+                </center>
+                <br><br><br>
+                <div id="reading" style="display:none;">
+                    <table style="height: auto; margin-left: auto; margin-right: auto;" width="970">
+                        <tbody class="quarterly">
+                            <tr style="height: 45px;" class="first">
+                                <td style="width: 120px; height: 45px; text-align: center;"><strong>NO.</strong></td>
+                                <td style="width: 350px; height: 45px; text-align: center;" colspan="3">
+                                    <strong>TOPIC</strong></td>
+                                <td style="width: 500px; height: 45px; text-align: center;" colspan="4">
+                                    <strong>DESCRIPTION</strong></td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">1</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/RC/Intro_RC_1W.html">Reading Style: Scanning</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Definition of scanning, when to use
+                                    scanning, and how to scan.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">2</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/RC/Intro_RC_2W.html">Reading Style: Skimming</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Definition of skimming, when to use
+                                    skimming, and how to skim.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">3</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/RC/Intro_RC_3W.html">Reading Style: In-Depth Reading</a>
+                                </td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Definition of in-depth reading, when
+                                    to use in-depth reading, and how to read intensively.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">4</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/RC/Intro_RC_4W.html">Reading Style: In-Depth Reading</a>
+                                </td>
+                                <td style="width: 500px; height: 45px;" colspan="4">In-depth reading strategy.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;"></td>
+                                <td style="width: 350px; height: 45px;" colspan="3">Drill for Reading Style</td>
+                                <td style="width: 500px; height: 45px;" colspan="4">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">5</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/RC/Intro_RC_5W.html">Non-Linear Visuals</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Definition of non-linear visuals.
+                                </td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">6</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/RC/Intro_RC_6W.html">Transcoding Diagrams</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Interpret information presented in
+                                    bar graph, line graph, and pie chart.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;"></td>
+                                <td style="width: 350px; height: 45px;" colspan="3">Drill for Interpreting Non-Linear
+                                    Visuals</td>
+                                <td style="width: 500px; height: 45px;" colspan="4">&nbsp;</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">7</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/RC/Intro_RC_7W.html">Interpreting Signs and Symbols</a>
+                                </td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Road and prohibited signs you should
+                                    be familiar with.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">8</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/RC/Intro_RC_8W.html">Interpreting Signs and Symbols</a>
+                                </td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Road and prohibited signs you should
+                                    be familiar with.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">9</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/RC/Intro_RC_9W.html">Telling Directions and Map
+                                        Reading</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">The basics of map reading.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;"></td>
+                                <td style="width: 350px; height: 45px;" colspan="3">Drill for Interpreting Signs and
+                                    Symbols</td>
+                                <td style="width: 500px; height: 45px;" colspan="4">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="listening" style="display:none;">
+                    <table style="height: auto; margin-left: auto; margin-right: auto;" width="970">
+                        <tbody class="quarterly">
+                            <tr style="height: 45px;" class="first">
+                                <td style="width: 120px; height: 45px; text-align: center;"><strong>NO.</strong></td>
+                                <td style="width: 350px; height: 45px; text-align: center;" colspan="3">
+                                    <strong>TOPIC</strong></td>
+                                <td style="width: 500px; height: 45px; text-align: center;" colspan="4">
+                                    <strong>DESCRIPTION</strong></td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">1</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/LC/Intro_LC_1W.html">Prosodic Features</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Introduction to prosodic features.
+                                </td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">2</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/LC/Intro_LC_2W.html">Prosodic Features: Volume</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Definition of volume.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">3</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/LC/Intro_LC_3W.html">Prosodic Features: Speech Rate</a>
+                                </td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Definition of speech rate.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">4</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/LC/Intro_LC_4W.html">Prosodic Features: Pause</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Definition of pause.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">5</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/LC/Intro_LC_5W.html">Prosodic Features: Intonation</a>
+                                </td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Definition of intonation.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">6</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/LC/Intro_LC_6W.html">Prosodic Features: Stress</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Definition of stress.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">7</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/LC/Intro_LC_7W.html">Prosodic Features: Juncture</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Definition of juncture.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">8</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/LC/Intro_LC_8W.html">Prosodic Features: Pitch</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Definition of pitch.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="viewing" style="display:none;">
+                    <table style="height: auto; margin-left: auto; margin-right: auto;" width="970">
+                        <tbody class="quarterly">
+                            <tr style="height: 45px;" class="first">
+                                <td style="width: 120px; height: 45px; text-align: center;"><strong>NO.</strong></td>
+                                <td style="width: 350px; height: 45px; text-align: center;" colspan="3">
+                                    <strong>TOPIC</strong></td>
+                                <td style="width: 500px; height: 45px; text-align: center;" colspan="4">
+                                    <strong>DESCRIPTION</strong></td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">1</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/VC/Intro_VC_1W.html">Structural Analysis</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Introduction to structural analysis.
+                                </td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">2</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/VC/Intro_VC_2W.html">Prefix, Root, Suffix</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Break words down into their basic
+                                    components.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">3</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/VC/Intro_VC_3W.html">Signs and Symbols</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Meaning of given road and prohibited
+                                    signs.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">4</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/VC/Intro_VC_4W.html">Genre Identification</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Different genres of viewing
+                                    materials.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">5</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/VC/Intro_VC_5W.html">Genre Identification</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Different genres of viewing
+                                    materials.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">6</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/VC/Intro_VC_6W.html">Organizing Information</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Introduction to mind mapping.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">7</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/VC/Intro_VC_7W.html">Organizing Information</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Definition of mind mapping.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">8</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/VC/Intro_VC_8W.html">Truthfulness and Accuracy</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Ways to determine the accuracy and
+                                    truthfulness of a printed material.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">9</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/VC/Intro_VC_9W.html">Truthfulness and Accuracy</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Ways to determine the accuracy and
+                                    truthfulness of a website.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;"></td>
+                                <td style="width: 350px; height: 45px;" colspan="3">Drill for Interpreting Signs and
+                                    Symbols</td>
+                                <td style="width: 500px; height: 45px;" colspan="4">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="vocabulary" style="display:none;">
+                    <table style="height: auto; margin-left: auto; margin-right: auto;" width="970">
+                        <tbody class="quarterly">
+                            <tr style="height: 45px;" class="first">
+                                <td style="width: 120px; height: 45px; text-align: center;"><strong>NO.</strong></td>
+                                <td style="width: 350px; height: 45px; text-align: center;" colspan="3">
+                                    <strong>TOPIC</strong></td>
+                                <td style="width: 500px; height: 45px; text-align: center;" colspan="4">
+                                    <strong>DESCRIPTION</strong></td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">1</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/VD/Intro_VD_1W.html">Colloquial Language vs Slang</a>
+                                </td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Introduction to colloquial language
+                                    and slang.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">2</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/VD/Intro_VD_2W.html">Features of Colloquial Language and
+                                        Slang</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Features of colloquial language and
+                                    slang.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">3</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/VD/Intro_VD_3W.html">Idiomatic Expressions</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Introduction to idiomatic
+                                    expressions or idioms.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">4</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/VD/Intro_VD_4W.html">Idiomatic Expressions</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Examples of idiomatic expressions.
+                                </td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">5</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/VD/Intro_VD_5W.html">Colloquial Language</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Colloquial language and its
+                                    equivalent meaning.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">6</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/VD/Intro_VD_6W.html">Idiomatic Expression</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Idiomatic expression and its
+                                    equivalent meaning.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">7</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/VD/Intro_VD_7W.html">Applying Colloquial Language</a>
+                                </td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Importance of colloquial language in
+                                    oral communication.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">8</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/VD/Intro_VD_8W.html">Application of Idiomatic
+                                        Expression</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Importance of idiomatic expressions
+                                    in oral communication.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">9</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/VD/Intro_VD_9W.html">Colloquial Language vs Idiomatic
+                                        Expression</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Difference between colloquial
+                                    language and idiomatic expressions.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="literature" style="display:none;">
+                    <table style="height: auto; margin-left: auto; margin-right: auto;" width="970">
+                        <tbody class="quarterly">
+                            <tr style="height: 45px;" class="first">
+                                <td style="width: 120px; height: 45px; text-align: center;"><strong>NO.</strong></td>
+                                <td style="width: 350px; height: 45px; text-align: center;" colspan="3">
+                                    <strong>TOPIC</strong></td>
+                                <td style="width: 500px; height: 45px; text-align: center;" colspan="4">
+                                    <strong>DESCRIPTION</strong></td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">1</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/LIT/Intro_LIT_1W.html">Literature as a Connection to a
+                                        Significant Past</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Different literary genres of
+                                    Philippine literature during the pre-colonial period.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">2</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/LIT/Intro_LIT_2W.html">Genre Specification</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Theme of Florante at Laura by
+                                    Francisco Balagtas.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">3</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/LIT/Intro_LIT_3W.html">Sensory Image Appreciation</a>
+                                </td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Sensory images used in literature.
+                                </td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">4</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/LIT/Intro_LIT_4W.html">Literary Devices</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Literary devices used in literature.
+                                </td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">5</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/LIT/Intro_LIT_5W.html">Literary Devices</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Literary devices and their examples.
+                                </td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">6</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/LIT/Intro_LIT_6W.html">Tone, Mood, Technique</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Determining the tone, mood,
+                                    technique, and purpose of the author.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">7</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/LIT/Intro_LIT_7W.html">Tone, Mood, Technique</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Theme of Banaag at Sikat by Lope K.
+                                    Santos.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">8</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/LIT/Intro_LIT_8W.html">Theme Similarities and
+                                        Differences</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Theme of Dekada '70 by Lualhati
+                                    Bautista.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">9</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/LIT/Intro_LIT_9W.html">Culture, History, Environment</a>
+                                </td>
+                                <td style="width: 500px; height: 45px;" colspan="4">The Last Time I Saw Mother by Arlene
+                                    J. Chai.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="writing" style="display:none;">
+                    <table style="height: auto; margin-left: auto; margin-right: auto;" width="970">
+                        <tbody class="quarterly">
+                            <tr style="height: 45px;" class="first">
+                                <td style="width: 120px; height: 45px; text-align: center;"><strong>NO.</strong></td>
+                                <td style="width: 350px; height: 45px; text-align: center;" colspan="3">
+                                    <strong>TOPIC</strong></td>
+                                <td style="width: 500px; height: 45px; text-align: center;" colspan="4">
+                                    <strong>DESCRIPTION</strong></td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">1</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/WC/Intro_WC_1W.html">Oral vs Written Language</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Difference between oral and written
+                                    language.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">2</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/WC/Intro_WC_2W.html">Literary vs Academic Writing</a>
+                                </td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Introduction to literary and
+                                    academic writing.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">3</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/WC/Intro_WC_3W.html">Literary vs Academic Writing</a>
+                                </td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Difference between literary and
+                                    academic writing.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">4</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/WC/Intro_WC_4W.html">Paragraphs</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Definition and kinds of paragraphs.
+                                </td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">5</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/WC/Intro_WC_5W.html">Paragraphs</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Kinds of paragraphs (summary).</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">6</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/WC/Intro_WC_6W.html">Paragraph Composition</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Parts of a simple paragraph.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">7</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/WC/Intro_WC_7W.html">Paragraph Composition</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Steps in writing a simple paragraph.
+                                </td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">8</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/WC/Intro_WC_8W.html">Retelling Myths with Paragraphs</a>
+                                </td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Why Do the Moon and Stars Appear
+                                    Only at Night retold in simple paragraphs.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">9</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/WC/Intro_WC_9W.html">Retelling Myths with Paragraphs</a>
+                                </td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Why Does the Philippines Have 7,000
+                                    Islands? retold in simple paragraphs.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;"></td>
+                                <td style="width: 350px; height: 45px;" colspan="3">Drill for Paragraph Composing</td>
+                                <td style="width: 500px; height: 45px;" colspan="4">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="oral" style="display:none;">
+                    <table style="height: auto; margin-left: auto; margin-right: auto;" width="970">
+                        <tbody class="quarterly">
+                            <tr style="height: 45px;" class="first">
+                                <td style="width: 120px; height: 45px; text-align: center;"><strong>NO.</strong></td>
+                                <td style="width: 350px; height: 45px; text-align: center;" colspan="3">
+                                    <strong>TOPIC</strong></td>
+                                <td style="width: 500px; height: 45px; text-align: center;" colspan="4">
+                                    <strong>DESCRIPTION</strong></td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">1</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/OL/Intro_OL_1W.html">Oral Language</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">The sounds of the English language.
+                                </td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">2</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/OL/Intro_OL_2W.html">Prosodic Features: Pitch</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Observe the correct pitch levels.
+                                </td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">3</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/OL/Intro_OL_3W.html">Observing Correct Pitch Levels</a>
+                                </td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Watch a video about the correct
+                                    pitch levels.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">4</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/OL/Intro_OL_4W.html">Prosodic Features: Stress</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Use the correct stress.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">5</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/OL/Intro_OL_5W.html">Observing Correct Stress</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Watch a video about the correct
+                                    stress.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">6</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/OL/Intro_OL_6W.html">Prosodic Features: Intonation</a>
+                                </td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Use the correct rising and falling
+                                    intonation.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">7</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/OL/Intro_OL_7W.html">Observing Correct Intonation</a>
+                                </td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Use the correct rising-falling
+                                    intonation.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">8</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/OL/Intro_OL_8W.html">Prosodic Features: Juncture</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Use the correct juncture.</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">9</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/OL/Intro_OL_9W.html">Prosodic Features: Speech Rate</a>
+                                </td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Use the correct speech rate.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="grammar" style="display:none;">
+                    <table style="height: auto; margin-left: auto; margin-right: auto;" width="970">
+                        <tbody class="quarterly">
+                            <tr style="height: 45px;" class="first">
+                                <td style="width: 120px; height: 45px; text-align: center;"><strong>NO.</strong></td>
+                                <td style="width: 350px; height: 45px; text-align: center;" colspan="3">
+                                    <strong>TOPIC</strong></td>
+                                <td style="width: 500px; height: 45px; text-align: center;" colspan="4">
+                                    <strong>DESCRIPTION</strong></td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">1</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/GA/Intro_GA_1W.html">Subject-Verb Agreement</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Rule #1 and #2</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">2</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/GA/Intro_GA_2W.html">Subject-Verb Agreement</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Rule #3</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">3</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/GA/Intro_GA_3W.html">Subject-Verb Agreement</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Rule #4</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">4</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/GA/Intro_GA_4W.html">Subject-Verb Agreement</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Rule #5</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">5</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/GA/Intro_GA_5W.html">Subject-Verb Agreement</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Rule #6 and #7</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">6</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/GA/Intro_GA_6W.html">Subject-Verb Agreement</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Rule #8</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">7</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/GA/Intro_GA_7W.html">Subject-Verb Agreement</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Rule #9 and #10</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">8</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/GA/Intro_GA_8W.html">Subject-Verb Agreement</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Rule #11</td>
+                            </tr>
+                            <tr style="height: 45px;">
+                                <td style="width: 120px; height: 45px; text-align: center;">9</td>
+                                <td style="width: 350px; height: 45px;" colspan="3"><a
+                                        href="././FirstQuarter/GA/Intro_GA_9W.html">Subject-Verb Agreement</a></td>
+                                <td style="width: 500px; height: 45px;" colspan="4">Rule #12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+</body>
+
+</html>

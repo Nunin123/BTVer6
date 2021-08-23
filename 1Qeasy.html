@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Train: A Learning and Practice Application</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monsterrat" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <header style="background: #F2D45C;">
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <a href="index.html" class="logo">Brain Train</a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="modules.html">Modules</a></li>
+                <li><a class="active" href="assessment.html">Practice Assessments</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+        </nav>
+
+        <nav class="rightnavbar">
+            <ul>
+                <li id="login"><a href="signin.html">Sign in</a></li>
+                <li><a id="signup" href="signup.html">Sign up</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="crayonbody">
+        <div class="transparent" id="drillcontainer">
+            <div>
+                <h2>Question <span>1</span> of 15</h2>
+                <p class="drillP"></p>
+            </div>
+
+            <div class="centerButton">
+                <button class="btnWidth">1</button>
+                <button class="btnWidth">2</button>
+                <button class="btnWidth">3</button>
+                <button class="btnWidth">4</button>
+                <button class="btnWidth">5</button>
+                <button class="btnWidth">6</button>
+                <button class="btnWidth">7</button>
+                <button class="btnWidth">8</button>
+                <button class="btnWidth">9</button>
+                <button class="btnWidth">10</button>
+                
+                <button id="btngreen" class="btn" onclick="showDLevel()">Submit</button>
+            </div>
+
+            <div class="popup" id="popupDL">
+                <div class="overlay"></div>
+                <div class="chooseLevel">
+                    <div class="closebtn" onclick="showDLevel()">&times;</div>
+                    <h2>Submit assessment?</h2>
+                    <form action="#">
+                        <button id="btngreen" class="btn">Yes</button>
+                    </form>
+                    <form>
+                        <button id="btnyellow" class="btn" onclick="showDLevel()">No</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

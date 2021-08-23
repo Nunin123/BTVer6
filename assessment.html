@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Train: A Learning and Practice Application</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monsterrat" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+    <header style="background: #073AA8;">
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <a href="index.html" class="logo">Brain Train</a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="modules.html">Modules</a></li>
+                <li><a class="active" href="assessment.html">Practice Assessments</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+        </nav>
+
+        <nav class="rightnavbar">
+            <ul>
+                <li id="login"><a href="signin.html">Sign in</a></li>
+                <li><a id="signup" href="signup.html">Sign up</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="home" id="assessmenthome">
+
+        <div class="content">
+            <h1 class="blueh1">TAKE</h1>
+            <h1 class="blueh1">ASSESSMENTS</h1>
+            <p>Improve your knowledge in English by taking up</p>
+            <p>free practice assessments.</p>
+            <form action="#crayonbody" method="GET">
+                <div>
+                    <button id="btndarkblue" class="btn" type="submit">Start Assessments</i></button>
+                </div>
+            </form>
+        </div>
+        <div class="image">
+            <img src="image/assessmentpic.png" alt="">
+        </div>
+
+    </section>
+
+    <div class="crayonbody" id="crayonbody">
+        <div class="drill">
+            <div>
+                <table style="height: 154px; width: 969.297px;" class="modulelist">
+                    <tbody>
+                        <tr style="height: 13px;">
+                            <td style="width: 259px; height: 65px;" rowspan="2"><img src="image/green.png"></td>
+                            <td style="width: 37px; height: 65px;" rowspan="2"><br /><br /></td>
+                            <td style="width: 640.297px; height: 13px;">
+                                <h1 id="first">1st Quarter Assessment</h1>
+                            </td>
+                        </tr>
+                        <tr style="height: 52px;">
+                            <td style="width: 640.297px; height: 52px;" id="subtitle">This assessment covers the
+                                following: pre-colonial Philippine literature, reading styles, ways of determining word
+                                meaning, sounds of English and speech, and subject-verb agreement.</br>
+                                <div class="popup" id="popupDL">
+                                    <div class="overlay"></div>
+                                    <div class="chooseLevel">
+                                        <div class="closebtn" onclick="showDLevel()">&times;</div>
+                                        <h2>Choose difficulty level:</h2>
+                                        <form action="1Qeasy.html">
+                                            <button id="btngreen" class="btn">Easy</button>
+                                        </form>
+                                        <form action="1Qmedium.html">
+                                            <button id="btndarkblue" class="btn">Medium</button>
+                                        </form>
+                                        <form action="1Qhard.html">
+                                            <button id="btnpurple" class="btn">Hard</button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <button id="btngreen" class="btn" onclick="showDLevel()">Start</button>
+                            </td>
+
+                        </tr>
+                        <tr style="height: 13px;">
+                            <td style="width: 259px; height: 13px;">&nbsp;</td>
+                            <td style="width: 37px; height: 13px;">&nbsp;</td>
+                            <td style="width: 640.297px; height: 13px;">&nbsp;</td>
+                        </tr>
+                        <tr style="height: 13px;">
+                            <td style="width: 259px; height: 65px;" rowspan="2"><br /><img src="image/blue.png"></td>
+                            <td style="width: 37px; height: 65px;" rowspan="2"><br /><br /></td>
+                            <td style="width: 640.297px; height: 13px;">
+                                <h1 id="second">2nd Quarter Assessment</h1>
+                            </td>
+                        </tr>
+                        <tr style="height: 52px;">
+                            <td style="width: 640.297px; height: 52px;" id="subtitle">This assessment covers the
+                                following: Philippine literature during the Period of Apprenticeship, listening and
+                                viewing strategies, literal and figurative language, ways to extract andcondense
+                                information, and oral communication.</br>
+                                <form action="#">
+                                    <button id="btnlightblue" class="btn" type="submit">Start</button>
+                                </form>
+                        </tr>
+                        <tr style="height: 13px;">
+                            <td style="width: 259px; height: 13px;">&nbsp;</td>
+                            <td style="width: 37px; height: 13px;">&nbsp;</td>
+                            <td style="width: 640.297px; height: 13px;">&nbsp;</td>
+                        </tr>
+                        <tr style="height: 13px;">
+                            <td style="width: 259px; height: 65px;" rowspan="2"><img src="image/yellow.png"><br /><br />
+                            </td>
+                            <td style="width: 37px; height: 65px;" rowspan="2"><br /><br /></td>
+                            <td style="width: 640.297px; height: 13px;">
+                                <h1 id="third">3rd Quarter Assessment</h1>
+                            </td>
+                        </tr>
+                        <tr style="height: 52px;">
+                            <td style="width: 640.297px; height: 52px;" id="subtitle">This assessment covers the
+                                following: Philippine literature in the Period of Emergence, strategies in listening to
+                                and viewing of texts, word relationships, informative speech forms, passive/active
+                                voice, tenses, and sentence connectors.</br>
+                                <form action="#">
+                                    <button id="btnyellow" class="btn" type="submit">Start</button>
+                                </form>
+                        </tr>
+                        <tr style="height: 13px;">
+                            <td style="width: 259px; height: 13px;">&nbsp;</td>
+                            <td style="width: 37px; height: 13px;">&nbsp;</td>
+                            <td style="width: 640.297px; height: 13px;">&nbsp;</td>
+                        </tr>
+                        <tr style="height: 13.875px;">
+                            <td style="width: 259px; height: 65.875px;" rowspan="2"><img src="image/violet.png"></td>
+                            <td style="width: 37px; height: 65.875px;" rowspan="2">&nbsp;</td>
+                            <td style="width: 640.297px; height: 13.875px;">
+                                <h1 id="fourth">4th Quarter Assessment</h1>
+                            </td>
+                        </tr>
+                        <tr style="height: 52px;">
+                            <td style="width: 640.297px; height: 52px;" id="subtitle">This assessment covers the
+                                following: Contemporary Philippine literature, extended text types, lexical and
+                                contextual cues, appropriate and polite oral language, stance, and behavior, and use of
+                                imperatives, prepositions, verbs, and wh-questions.</br>
+                                <form action="#">
+                                    <button id="btnpurple" class="btn" type="submit">Start</button>
+                                </form>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

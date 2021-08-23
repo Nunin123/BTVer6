@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Train: A Learning and Practice Application</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monsterrat" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <header style="background: #F2D45C;">
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <a href="index.html" class="logo">Brain Train</a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="modules.html">Modules</a></li>
+                <li><a href="assessment.html">Practice Assessments</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+        </nav>
+
+        <nav class="rightnavbar">
+            <ul>
+                <li id="login"><a href="signin.html">Sign in</a></li>
+                <li><a id="signup" href="signup.html">Sign up</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="crayonbody">
+        <div class="transparent" id="drillcontainer">
+            <div>
+                <h1 class="drillH1">DRILL</h1>
+                <p class="drillP">Instruction: Read the sentences carefully and supply the missing part of the sentence
+                    by dragging and dropping the given choices.</p>
+            </div>
+
+
+            <div class="centerText">
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <h2 draggable="true" ondragstart="drag(event)" id="drag1">IN</h2>
+                </div>
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <h2 draggable="true" ondragstart="drag(event)" id="drag2">WITH</h2>
+                </div>
+                <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <h2 draggable="true" ondragstart="drag(event)" id="drag3">ADVICE</h2>
+                </div>
+                <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <h2 draggable="true" ondragstart="drag(event)" id="drag4">ADVISE</h2>
+                </div>
+            </div>
+
+            <div class="divMargintop">
+                <div class="divSpacing">
+                    <p class="drillP">(1)</p>
+                    <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <p class="drillP">regard to the recent COVID-19 outbreak, classes are cancelled.</p>
+                </div>
+
+                <div class="divSpacing">
+                    <p class="drillP">(2) I will be taking two to three classes a day as per the guidance counselor's
+                    </p>
+                    <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <p class="drillP">.</p>
+                </div>
+
+                <!-- </br></br></br></br></br></br></br></br></br></br></br></br> -->
+                <div class="divSpacing">
+                    <p class="drillP">(3) Please </p>
+                    <div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <p class="drillP">her to take breaks in between her study period.</p>
+                </div>
+
+                <!-- </br></br></br></br></br></br> -->
+                <div class="divSpacing">
+                    <p class="drillP">(4) The school has called us</p>
+                    <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <p class="drillP">regard to your behavior!</p>
+                </div>
+            </div>
+
+            <!-- </br> -->
+            <div>
+                <form id="drillCheckfrm" action="#">
+                    <button id="btnyellow" class="btn" type="submit">Check</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
