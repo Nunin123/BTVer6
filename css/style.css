@@ -852,8 +852,8 @@ div.lesson center img{
 }
 
 
-/* drill */
-#drillcontainer{
+/* drag&drop drill */
+/* #drillcontainer{
     background: white;
     float: left;
 }
@@ -900,13 +900,68 @@ div.lesson center img{
     margin-top: 13rem;
 } */
 
-.divMargintop {
+/* .divMargintop {
     margin-top: 13rem;
 }
 
 #drillCheckfrm {
     float: right;
+} */
+
+/* 1q rc drill1 */
+
+#drillcontainer {
+    background: #fff;
 }
+
+.drillH1 {  
+    text-align: center;
+    color: #F2D45C;
+    font-weight: 800;
+}
+
+.drillP {
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.btn-group button {
+    background-color: #F2D45C;
+    border: 1px solid #ceb44e;
+    color: black;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+    border: none;
+    /* border-radius: 2rem; */
+    box-shadow: 0 9px #999;
+    outline: none;
+}
+
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none;
+}
+
+.btn-group button:hover {
+    background-color: black;
+    color: #F2D45C;
+}
+
+.btn-group .active, .btn-group .drill1btn:active {
+    background-color: black;
+    color: #F2D45C;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+/* end */
 
 /* 1Q assessment easy */
 
