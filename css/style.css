@@ -775,29 +775,35 @@ tr td:not(.first){
 }
 
 select{
-    height: 45px;
-    width: 970px;
+    height: auto;
+    width: 100%;
     font-size: 18px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border-radius: 10px;
 }
 
-.breadcrumb{
-   margin-left: 35px;
+.breadcrumb, .breadcrumb2{
    font-size: 16px;
 }
 
-.breadcrumb i{
+.breadcrumb i, .breadcrumb2 i{
     color: #11be79;
 }
 
-.breadcrumb a{
-    color: #fff;
+.crayonbody .transparent .breadcrumb2 a {
+    color: #000000;
 }
+
+.crayonbody .transparent .breadcrumb2 .a-hover:hover {
+    cursor: pointer;
+    color: #11be79;
+}
+
 
 div.continue center img{
     width: 52%;
     margin-top: 80px;
-
 }
 
 .continue #btn{
@@ -916,7 +922,7 @@ div.lesson center img{
 
 .drillH1 {  
     text-align: center;
-    color: #F2D45C;
+    color: #11be79;
     font-weight: 800;
 }
 
@@ -926,8 +932,8 @@ div.lesson center img{
 }
 
 .btn-group button {
-    background-color: #F2D45C;
-    border: 1px solid #ceb44e;
+    background-color: #11be79;
+    border: 1px solid #0e9e65;
     color: black;
     padding: 10px 24px;
     cursor: pointer;
@@ -950,19 +956,93 @@ div.lesson center img{
 
 .btn-group button:hover {
     background-color: black;
-    color: #F2D45C;
+    color: #11be79;
 }
 
 .btn-group .active, .btn-group .drill1btn:active {
     background-color: black;
-    color: #F2D45C;
+    color: #11be79;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
-/* 
-.drillCheckfrm {
-    float: right;
-} */
+
+/* end */
+
+/* 1q rc drill2 */
+
+.centerimgDrill {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.drillCheckfrm label, .drillCheckfrm input {
+    cursor: pointer;
+}
+
+.drillCheckfrm input[type="radio"]:checked,
+.drillCheckfrm input[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.drillCheckfrm label {
+    opacity: .6;
+    transition: opacity .2s linear, transform .2s ease-out;
+}
+
+.drillCheckfrm label:hover, .drillCheckfrm input[type="radio"]:checked + label {
+    opacity: 1;
+}
+
+.drillCheckfrm input[type="radio"]:checked + label,
+.drillCheckfrm input[type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+
+.drillCheckfrm input[type="radio"]:checked + label:before,
+.drillCheckfrm input[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #666;
+    border-radius: 100%;
+    background: #fff;
+}
+
+.drillCheckfrm input[type="radio"]:checked + label:after,
+.drillCheckfrm input[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #F2D45C;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.drillCheckfrm input[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.drillCheckfrm input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
 
 /* end */
 
@@ -985,7 +1065,7 @@ div.lesson center img{
     position: relative;
     overflow: hidden;
     z-index: 0;
-    background: #f2d45c;
+    background: #11be79;
 }
 
 .centerButton{
@@ -993,8 +1073,9 @@ div.lesson center img{
     width: 60%;
 }
 
-.crayonbody .transparent span {
-    color: #f2d45c;
+.crayonbody .transparent .spanGreen {
+    font-weight: bold;
+    color: #11be79;
 }
 
 /* 1Q easy ends here */
