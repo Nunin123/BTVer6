@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Train: A Learning and Practice Application</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monsterrat" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../js/script.js"></script>
+</head>
+
+<body>
+
+    <header style="background: #11be79;">
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <a href="../../index.html" class="logo">Brain Train</a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a class="active" href="../../modules.html">Modules</a></li>
+                <li><a href="../../assessment.html">Practice Assessments</a></li>
+                <li><a href="../../about_us.html">About Us</a></li>
+            </ul>
+        </nav>
+
+        <nav class="rightnavbar">
+            <ul>
+                <li id="login"><a href="../../signin.html">Sign in</a></li>
+                <li><a id="signup" href="../../signup.html">Sign up</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="crayonbody">
+        <div class="transparent" id="drillcontainer">
+            <div class="breadcrumb2">
+                <a class="a-hover" href="modules.html">Modules</a>
+                <i class="right angle icon divider">&nbsp;>&nbsp;</i>
+                <a class="a-hover" href="first_quarter.html">1st Quarter</a>
+                <i class="right angle icon divider">&nbsp;>&nbsp;</i>
+                <a>Drill for Colloquial and Idiomatic Words/Expressions</a>
+            </div>
+            <div>
+                <h1 class="drillH1">Appropriate use of Colloquial and Idiomatic Word / Expression</h1>
+                <p class="drillP">Instructions: Complete the crossword puzzle by supplying the boxes with most
+                    appropriate word or expression guided by the clues.</p>
+
+            </div>
+
+            <!-- remove letters if 100% working to center inputs!! -->
+            <div class="crosswordTable">
+                <table>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charB" type="text" maxlength="1" placeholder="9"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charR" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charB2" type="text" maxlength="1" placeholder="11"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charE" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td><input id="charM" type="text" maxlength="1" placeholder="10"></td>
+                        <td></td>
+                        <td><input id="charB3" type="text" maxlength="1" placeholder="3"></td>
+                        <td><input id="charU" type="text" maxlength="1"></td>
+                        <td><input id="charZ" type="text" maxlength="1"></td>
+                        <td><input id="charZ2" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charI" type="text" maxlength="1"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charA" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td><input id="charI2" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td><input id="charE2" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charT" type="text" maxlength="1"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charK" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td><input id="charL" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td><input id="charS" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charB4" type="text" maxlength="1" placeholder="4"></td>
+                        <td><input id="charO" type="text" maxlength="1"></td>
+                        <td><input id="charA2" type="text" maxlength="1"></td>
+                        <td><input id="charT2" type="text" maxlength="1"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charA3" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td><input id="charE3" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td><input id="charT3" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charE4" type="text" maxlength="1"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charL2" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td><input id="charS2" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td><input id="charI3" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charR2" type="text" maxlength="1" placeholder="5"></td>
+                        <td><input id="charA4" type="text" maxlength="1" placeholder="12"></td>
+                        <td><input id="charI4" type="text" maxlength="1"></td>
+                        <td><input id="charN" type="text" maxlength="1"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input id="charW" type="text" maxlength="1" placeholder="1"></td>
+                        <td><input id="charE5" type="text" maxlength="1"></td>
+                        <td><input id="charA5" type="text" maxlength="1"></td>
+                        <td><input id="charT4" type="text" maxlength="1"></td>
+                        <td><input id="charH" type="text" maxlength="1"></td>
+                        <td><input id="charE6" type="text" maxlength="1"></td>
+                        <td><input id="charR3" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charI5" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charG" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td><input id="charO2" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charN2" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charI6" type="text" maxlength="1" placeholder="2"></td>
+                        <td><input id="charN3" type="text" maxlength="1"></td>
+                        <td><input id="charF" type="text" maxlength="1"></td>
+                        <td><input id="charO3" type="text" maxlength="1"></td>
+                        <td><input id="charR4" type="text" maxlength="1" placeholder="13"></td>
+                        <td><input id="charM2" type="text" maxlength="1"></td>
+                        <td><input id="charA6" type="text" maxlength="1"></td>
+                        <td><input id="charT5" type="text" maxlength="1"></td>
+                        <td><input id="charI7" type="text" maxlength="1" placeholder="14"></td>
+                        <td><input id="charO4" type="text" maxlength="1"></td>
+                        <td><input id="charN4" type="text" maxlength="1"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charE7" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charA7" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charN5" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charS3" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td><input id="charL3" type="text" maxlength="1" placeholder="6"></td>
+                        <td><input id="charI8" type="text" maxlength="1"></td>
+                        <td><input id="charF2" type="text" maxlength="1"></td>
+                        <td><input id="charT6" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td><input id="charS4" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charN6" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charU2" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charC" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charL4" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charH2" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charT7" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input id="charD" type="text" maxlength="1" placeholder="7"></td>
+                        <td><input id="charI9" type="text" maxlength="1"></td>
+                        <td><input id="charS5" type="text" maxlength="1"></td>
+                        <td><input id="charG2" type="text" maxlength="1"></td>
+                        <td><input id="charU3" type="text" maxlength="1"></td>
+                        <td><input id="charI10" type="text" maxlength="1"></td>
+                        <td><input id="charS6" type="text" maxlength="1"></td>
+                        <td><input id="charE8" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charC2" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="charF3" type="text" maxlength="1" placeholder="8"></td>
+                        <td><input id="charR5" type="text" maxlength="1"></td>
+                        <td><input id="charE9" type="text" maxlength="1"></td>
+                        <td><input id="charA8" type="text" maxlength="1"></td>
+                        <td><input id="charK2" type="text" maxlength="1"></td>
+                        <td><input id="charO5" type="text" maxlength="1"></td>
+                        <td><input id="charU4" type="text" maxlength="1"></td>
+                        <td><input id="charT8" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="acrossdownDiv">
+                <h3>Across:</h3>
+                <p>(1) She has cough and colds. I wasn’t expecting her to be under the ______ either.</p>
+                <p>(2) ______ Superhighway; the one that holds all the answers.</p>
+                <p>(3) Oh, ____ off and stop annoying me with your nonsense!</p>
+                <p>(4) The final slot in the Reading Club has been secured. You just missed the ______.</p>
+                <p>(5) After that flu, I’m back to normal and feeling as right as ______.</p>
+                <p>(6) I just missed my train! Can somebody give me a ______?</p>
+                <p>(7) An initial misfortune which unexpectedly has an advantage; A blessing in ______,</p>
+                <p>(8) If I don’t get this chewing gum off my hair, my mom is going to ______; act absurdly (two words,
+                    no space)</p>
+
+                <h3>Down:</h3>
+                <p>(3) Slang for a very close friend</p>
+                <p>(9) In theater, it means good luck. (three words, no spaces)</p>
+                <p>(10) Represents a significant event in the development of a person.</p>
+                <p>(11) Once ______, twice shy; The experience of past failure or trauma makes a person hesitant in
+                    repeating their actions.</p>
+                <p>(12) A colloquial term for not</p>
+                <p>(13) I’m kind of busy with exams. Can we take a ______ on that movie marathon?</p>
+                <p>(14) Making matters worse for an already bad situation; Adding ______ to the injury</p>
+            </div>
+            </br></br>
+            <div>
+                <form class="drillCheckfrm" action="#">
+                    <button id="btngreen" class="btn" type="submit">Check</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

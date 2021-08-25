@@ -248,7 +248,7 @@ header #signup{
 }
 
 header #menu{
-    font-size: 3rem;
+    font-size: 2rem;
     color:#fff;
     cursor: pointer;
     display: none;
@@ -545,8 +545,8 @@ header #menu{
     }
 
     header .navbar.nav-toggle{
-        top:6rem;
-        transition: .2s ease-in-out;
+        top:5rem;
+        transition: .2s ease;
     }
 
 }
@@ -556,6 +556,16 @@ header #menu{
     html{
         font-size: 50%;
     }
+}
+
+@media only screen and (min-width: 992px) {
+
+    .crosswordTable table {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 }
 
 /* Bordered form */
@@ -1055,6 +1065,58 @@ div.lesson center img{
     border-radius: 1rem;
     text-align: center;
 }
+/* end */
+
+/* 1q vd drill1 crossword */
+
+.crosswordTable {
+    overflow-x: auto;
+}
+
+.crosswordTable table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    height: auto;
+}
+
+.crosswordTable table td {
+    padding: 0;
+    margin: 0;
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: white;
+}
+
+.crosswordTable table td:empty {
+    background-color: black;
+    height: auto;
+    max-width: 100%;
+}
+
+.crosswordTable input {
+    text-align: center;
+    height: auto;
+    max-width: 100%;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: auto;
+    background: #F0F3FF;
+}
+
+.acrossdownDiv h3 {
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+.acrossdownDiv p {
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
 /* end */
 
 /* 1q wc drill1 */
