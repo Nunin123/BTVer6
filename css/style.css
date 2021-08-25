@@ -537,7 +537,7 @@ header #menu{
 
     header .navbar ul li a.active,
     header .navbar ul li a:hover{
-        color:#f39c12;
+        color:#B464E6;
     }
 
     .fa-times{
@@ -545,7 +545,8 @@ header #menu{
     }
 
     header .navbar.nav-toggle{
-        top:6.4rem;
+        top:6rem;
+        transition: .2s ease-in-out;
     }
 
 }
@@ -577,7 +578,7 @@ form p {
 }
   
   /* Full-width inputs */
-  input[type=text], input[type=password] {
+  .container input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -705,7 +706,7 @@ form p {
     border: 5px solid #fff;
     padding: 25px;
     width: 100%;
-    height: auto;;
+    height: auto;
 }
 
 table .modulelist{
@@ -857,63 +858,6 @@ div.lesson center img{
     border-radius: 10px;
 }
 
-
-/* drag&drop drill */
-/* #drillcontainer{
-    background: white;
-    float: left;
-}
-
-.drillH1{
-    text-align: center;
-    color: #F2D45C;
-    font-weight: 800;
-}
-
-.drillP{
-    font-size: 2rem;
-    padding: 2rem 0;
-    float: left;
-}
-
-#div1, #div2, #div3, #div4{
-    float: left;
-    width: 100px;
-    height: 4rem;
-    margin: 10px;
-    padding: 10px;
-    background: #F2D45C;
-    text-align: center;
-}
-
-#div5, #div6, #div7, #div8{
-    float: left;
-    width: 100px;
-    height: 4rem;
-    margin: 10px;
-    padding: 10px;
-    background: gray;
-    text-align: center;
-  }
-
-.centerText{
-    margin: auto;
-    width: 50%;
-}
-
-/* pano ba pababain */
-/* .divSpacing {
-    margin-top: 13rem;
-} */
-
-/* .divMargintop {
-    margin-top: 13rem;
-}
-
-#drillCheckfrm {
-    float: right;
-} */
-
 /* 1q rc drill1 */
 
 #drillcontainer {
@@ -924,6 +868,8 @@ div.lesson center img{
     text-align: center;
     color: #11be79;
     font-weight: 800;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .drillP {
@@ -1023,7 +969,7 @@ div.lesson center img{
     content: '';
     width: 12px;
     height: 12px;
-    background: #F2D45C;
+    background: #11be79;
     position: absolute;
     top: 4px;
     left: 4px;
@@ -1045,6 +991,101 @@ div.lesson center img{
 }
 
 /* end */
+
+/* 1q rc drill 3 */
+
+.drillTable tr th{
+    font-size: 2rem;
+}
+
+.drillTable {
+    table-layout: fixed;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.drillTable, .drillTable tr th, .drillTable tr td {
+    border: .2rem solid black;
+    border-collapse: collapse;
+}
+
+.drillTable tr th {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #11be79;
+}
+
+.drillTable img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+.dragItems div img {
+    height: auto;
+    width: 10rem;
+    max-width: 100%;
+}
+
+.dragItems {
+    border: .2rem solid black;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+}
+
+#div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    /* background: #11be79; */
+    text-align: center;
+}
+
+#div11, #div12, #div13, #div14, #div15, #div16, #div17, #div18, #div19, #div20 {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 20px 10px;
+    background: rgb(172, 171, 171);
+    border-radius: 1rem;
+    text-align: center;
+}
+/* end */
+
+/* 1q wc drill1 */
+
+.paragraph {
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    text-align: justify;
+}
+
+.dragItems h3 {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+}
+
+.drillTextInput input {
+    font-size: 1.5rem;
+    width: 80%;
+    padding: 10px 20px;
+    height: auto;
+    margin-left: 2rem;
+    display: inline-block;
+    border: 2px solid #c4c3c3;
+    background: #F0F3FF;
+    border-radius: 1rem;
+}
+
+.drillTextInput {
+    margin-bottom: 3rem;
+}
 
 /* 1Q assessment easy */
 

@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="../../css/style.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../../js/script.js"></script>
 </head>
 
@@ -54,40 +55,47 @@
             </div>
             <div>
                 <h1 class="drillH1">Interpreting Signs, Symbols and Directions</h1>
-                <p class="drillP">Instructions: Match the following signs and symbols with its corresponding label by
-                    dragging the text to its appropriate place.</p>
+                <p class="drillP">Instructions: Match the following labels with its corresponding signs or symbols.
+                    Choose your answer from the given choices in the container.</p>
 
             </div>
             <div class="dragItems">
                 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <h2 draggable="true" ondragstart="drag(event)" id="drag1">Slippery Road</h2>
+                    <img src="../../image/turn_left_ahead.png" draggable="true" ondragstart="drag(event)"
+                        id="drag1"></img>
                 </div>
                 <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <h2 draggable="true" ondragstart="drag(event)" id="drag2">Humps</h2>
+                    <img src="../../image/no_entry_bike.png" draggable="true" ondragstart="drag(event)"
+                        id="drag2"></img>
                 </div>
                 <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <h2 draggable="true" ondragstart="drag(event)" id="drag3">Turn Left Ahead</h2>
+                    <img src="../../image/slippery_road.png" draggable="true" ondragstart="drag(event)"
+                        id="drag3"></img>
                 </div>
                 <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <h2 draggable="true" ondragstart="drag(event)" id="drag4">No Entry</h2>
+                    <img src="../../image/falling_rocks_left.png" draggable="true" ondragstart="drag(event)"
+                        id="drag4"></img>
                 </div>
                 <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <h2 draggable="true" ondragstart="drag(event)" id="drag5">Falling Rocks Left</h2>
+                    <img src="../../image/curve_to_the_left.png" draggable="true" ondragstart="drag(event)"
+                        id="drag5"></img>
                 </div>
                 <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <h2 draggable="true" ondragstart="drag(event)" id="drag6">No Entry for Bicycles</h2>
+                    <img src="../../image/no_parking.png" draggable="true" ondragstart="drag(event)" id="drag6"></img>
                 </div>
                 <div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <h2 draggable="true" ondragstart="drag(event)" id="drag7">No Parking</h2>
+                    <img src="../../image/no_overtaking.png" draggable="true" ondragstart="drag(event)"
+                        id="drag7"></img>
                 </div>
                 <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <h2 draggable="true" ondragstart="drag(event)" id="drag8">Curve to the Left</h2>
+                    <img src="../../image/humps.png" draggable="true" ondragstart="drag(event)" id="drag8"></img>
                 </div>
                 <div id="div9" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <h2 draggable="true" ondragstart="drag(event)" id="drag9">No Blowing of Horns</h2>
+                    <img src="../../image/no_blowing_of_horns.png" draggable="true" ondragstart="drag(event)"
+                        id="drag9"></img>
                 </div>
                 <div id="div10" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <h2 draggable="true" ondragstart="drag(event)" id="drag10">No Overtaking</h2>
+                    <img src="../../image/no_entry.png" draggable="true" ondragstart="drag(event)" id="drag10"></img>
                 </div>
             </div>
             <div>
@@ -98,7 +106,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="../../image/turn_left_ahead.png">
+                            <h2>No Entry</h2>
                         </td>
                         <td>
                             <div id="div11" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -106,7 +114,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="../../image/no_entry_bike.png">
+                            <h2>Curve to the Left</h2>
                         </td>
                         <td>
                             <div id="div12" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -114,7 +122,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="../../image/slippery_road.png">
+                            <h2>Slippery Road</h2>
                         </td>
                         <td>
                             <div id="div13" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -122,7 +130,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="../../image/falling_rocks_left.png">
+                            <h2>No Entry for Bicycles</h2>
                         </td>
                         <td>
                             <div id="div14" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -130,7 +138,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="../../image/curve_to_the_left.png">
+                            <h2>Falling Rocks Left</h2>
                         </td>
                         <td>
                             <div id="div15" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -138,7 +146,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="../../image/no_parking.png">
+                            <h2>Humps</h2>
                         </td>
                         <td>
                             <div id="div16" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -146,7 +154,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="../../image/no_overtaking.png">
+                            <h2>No Blowing of Horns</h2>
                         </td>
                         <td>
                             <div id="div17" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -154,7 +162,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="../../image/humps.png">
+                            <h2>Turn Left Ahead</h2>
                         </td>
                         <td>
                             <div id="div18" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -162,7 +170,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="../../image/no_blowing_of_horns.png">
+                            <h2>No Overtaking</h2>
                         </td>
                         <td>
                             <div id="div19" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -170,7 +178,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="../../image/no_entry.png">
+                            <h2>No Parking</h2>
                         </td>
                         <td>
                             <div id="div20" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
