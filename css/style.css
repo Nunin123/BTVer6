@@ -307,7 +307,6 @@ header #menu{
     float: left;
     width: 10%;
     padding: 10px;
-    margin: .7rem 0;
     border-radius: 1rem;
     background: #11BE79;
     color: white;
@@ -751,6 +750,11 @@ h1{
     color: #b464e6;
 }
 
+#first:hover, #second:hover, #third:hover, #fourth:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+
 .transparent{
     background: rgba(105, 105, 201, 0.3);
     border-radius: 25px;
@@ -1156,9 +1160,9 @@ div.lesson center img{
     text-align: center;
 }
 
-.btnWidth {
-    padding: 1rem 2rem;
-    font-size: 1.6rem;
+.btnWidth, .btnWidth2, .btnWidth3, .btnWidth4 {
+    padding: 1rem 1rem;
+    font-size: 1rem;
     color:#fff;
     background:var(--gradient);
     border-radius: 1rem;
@@ -1168,17 +1172,45 @@ div.lesson center img{
     position: relative;
     overflow: hidden;
     z-index: 0;
+}
+
+.btnWidth {
     background: #11be79;
 }
 
+.btnWidth2 {
+    background: #16A2BB;
+}
+
+.btnWidth3 {
+    background: #f2d45c;
+}
+
+.btnWidth4 {
+    background: #b464e6;
+}
 .centerButton{
-    margin: auto;
-    width: 60%;
+    display: inline-block;
 }
 
 .crayonbody .transparent .spanGreen {
     font-weight: bold;
     color: #11be79;
+}
+
+.crayonbody .transparent .spanBlue {
+    font-weight: bold;
+    color: #16A2BB;
+}
+
+.crayonbody .transparent .spanYellow {
+    font-weight: bold;
+    color: #f2d45c;
+}
+
+.crayonbody .transparent .spanPurple {
+    font-weight: bold;
+    color: #b464e6;
 }
 
 /* 1Q easy ends here */

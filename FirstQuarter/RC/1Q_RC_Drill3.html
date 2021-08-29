@@ -42,7 +42,6 @@
         </nav>
 
     </header>
-
     <div class="crayonbody">
         <div class="transparent" id="drillcontainer">
             <div class="breadcrumb2">
@@ -60,34 +59,34 @@
             </div>
             <div class="dragItems">
                 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <h2 draggable="true" ondragstart="drag(event)" id="drag1">Slippery Road</h2>
+                    <h2 draggable="true" ondragstart="drag(event)" id="drag1" data-div="div13">Slippery Road</h2>
                 </div>
                 <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <h2 draggable="true" ondragstart="drag(event)" id="drag2">Humps</h2>
+                    <h2 draggable="true" ondragstart="drag(event)" id="drag2" data-div="div18">Humps</h2>
                 </div>
                 <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <h2 draggable="true" ondragstart="drag(event)" id="drag3">Turn Left Ahead</h2>
+                    <h2 draggable="true" ondragstart="drag(event)" id="drag3" data-div="div11">Turn Left Ahead</h2>
                 </div>
                 <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <h2 draggable="true" ondragstart="drag(event)" id="drag4">No Entry</h2>
+                    <h2 draggable="true" ondragstart="drag(event)" id="drag4" data-div="div20">No Entry</h2>
                 </div>
                 <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <h2 draggable="true" ondragstart="drag(event)" id="drag5">Falling Rocks Left</h2>
+                    <h2 draggable="true" ondragstart="drag(event)" id="drag5" data-div="div14">Falling Rocks Left</h2>
                 </div>
                 <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <h2 draggable="true" ondragstart="drag(event)" id="drag6">No Entry for Bicycles</h2>
+                    <h2 draggable="true" ondragstart="drag(event)" id="drag6" data-div="div12">No Entry for Bicycles</h2>
                 </div>
                 <div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <h2 draggable="true" ondragstart="drag(event)" id="drag7">No Parking</h2>
+                    <h2 draggable="true" ondragstart="drag(event)" id="drag7" data-div="div16">No Parking</h2>
                 </div>
                 <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <h2 draggable="true" ondragstart="drag(event)" id="drag8">Curve to the Left</h2>
+                    <h2 draggable="true" ondragstart="drag(event)" id="drag8" data-div="div15">Curve to the Left</h2>
                 </div>
                 <div id="div9" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <h2 draggable="true" ondragstart="drag(event)" id="drag9">No Blowing of Horns</h2>
+                    <h2 draggable="true" ondragstart="drag(event)" id="drag9" data-div="div19">No Blowing of Horns</h2>
                 </div>
                 <div id="div10" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <h2 draggable="true" ondragstart="drag(event)" id="drag10">No Overtaking</h2>
+                    <h2 draggable="true" ondragstart="drag(event)" id="drag10" data-div="div17">No Overtaking</h2>
                 </div>
             </div>
             <div>
@@ -100,7 +99,7 @@
                         <td>
                             <img src="../../image/turn_left_ahead.png">
                         </td>
-                        <td>
+                        <td id="DQ1">
                             <div id="div11" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                         </td>
                     </tr>
@@ -181,8 +180,8 @@
 
             </br></br>
             <div>
-                <form class="drillCheckfrm" action="#">
-                    <button id="btngreen" class="btn" type="submit">Check</button>
+                <form class="drillCheckfrm">
+                    <button id="btngreen" class="btn" type="submit" onclick="RC_1Q_Drill3_Check()">Check</button>
                 </form>
             </div>
 
